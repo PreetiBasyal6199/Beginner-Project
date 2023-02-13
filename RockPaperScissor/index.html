@@ -19,21 +19,26 @@
     <title>Game One!</title>
   </head>
   <body>
-    <h1>Welcome to the Game!</h1>
-    <div>
-      <div class="row justify-content-center">
-        <div class="col-4">Player</div>
-        <div class="col-4">Computer</div>
+    <h1 style="text-align: center;">Welcome to the Game!</h1>
+    <h4 id="round" style="text-align: center; background-color: blue;"> Round 1</h4>
+    <div style="background-color: aqua;">
+      <div class="row align-items-center" >
+        <div class="col">Player</div>
+        <div class="col">Computer</div>
+        <div class="col">Draw</div>
+
       </div>
-      <div class="row justify-content-center">
+      <div class="row align-items-center">
         <div class="col-4" id="pcount">0</div>
         <div class="col-4" id="ccount">0</div>
+        <div class="col-4" id="dcount">0</div>
+
       </div>
     </div>
     <div class="container" mt-4>
-      <h1 style="display: center">Play your move</h1>
-      <div class="row align-items-center">
-        <div class="col-4">
+      <h1 style="text-align: center;">Play your move</h1>
+      <div class="row align-items-center mt-5">
+        <div class="col-4 ">
           <button class="options" type="button">Rock</button>
         </div>
         <div class="col">
@@ -44,19 +49,22 @@
         </div>
       </div>
     </div>
-    <div class="row mt-4 ml-5">
+    <div class="row mt-4  pl-5" style="text-align: center; background-color: aqua;">
       <div class="col-6 col-sm-4">Computer Move:</div>
-      <div class="col-6 col-sm-4" id="cmove">move</div>
+      <div class="col-6 col-sm-4" id="cmove"></div>
 
       <!-- Force next columns to break to new line at md breakpoint and up -->
       <div class="w-100 d-none d-md-block"></div>
 
       <div class="col-6 col-sm-4">Your move:</div>
-      <div class="col-6 col-sm-4" id="pmove">move</div>
+      <div class="col-6 col-sm-4" id="pmove"></div>
     </div>
 
-    <h3 id="wintag">Pause</h3>
+    <h3 id="wintag" style="text-align: center;" class="mt-4">Pause</h3>
     <h5 id="finale"></h3>
+      <button id="restart" >Restart</button>
+      <button id="next" style="display: None;">Next</button>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
